@@ -1,0 +1,68 @@
+*{box-sizing:border-box;font-family:tahoma}
+body{margin:0;background:#f4fbff;color:#1b3a57}
+
+/* Top */
+.topbar{
+  background:linear-gradient(135deg,#0ea5e9,#22c55e);
+  color:#fff; padding:14px 18px; display:flex; justify-content:space-between; align-items:center;
+  border-bottom-left-radius:22px; border-bottom-right-radius:22px;
+}
+.brand{font-weight:bold;font-size:20px}
+
+/* Slider */
+.slider{width:92%; margin:16px auto; overflow:hidden; border-radius:22px}
+.track{display:flex;width:300%; animation: slide 9s infinite}
+.track img{width:100%; flex-shrink:0}
+
+@keyframes slide{
+  0%,30%{transform:translateX(0)}
+  35%,65%{transform:translateX(-100%)}
+  70%,100%{transform:translateX(-200%)}
+}
+
+/* Title */
+.title{ text-align:center; margin:10px 0 2px}
+
+/* Pagination radios */
+input[name=pg]{display:none}
+.pages{width:92%; margin:10px auto}
+.page{display:none}
+
+/* show pages */
+#p1:checked ~ .pages .page1{display:grid}
+#p2:checked ~ .pages .page2{display:grid}
+#p3:checked ~ .pages .page3{display:grid}
+
+/* Grid */
+.page{
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  gap:14px
+}
+
+/* Card */
+.card{
+  background:#fff; border-radius:18px; padding:14px 10px; text-align:center; text-decoration:none; color:#0f172a;
+  box-shadow:0 10px 25px rgba(16,185,129,.12); transition:.2s;
+}
+.card:hover{transform:translateY(-4px); box-shadow:0 16px 40px rgba(14,165,233,.25)}
+.card img{width:64px;height:64px;object-fit:contain}
+.card h4{margin:10px 0 4px; font-size:15px}
+.card span{font-size:12px; color:#64748b}
+
+/* Pager */
+.pager{display:flex; justify-content:center; gap:10px; margin:16px 0}
+.pager label{
+  background:#0ea5e9; color:#fff; padding:8px 18px; border-radius:999px; cursor:pointer; box-shadow:0 8px 20px rgba(14,165,233,.35)
+}
+
+/* Article */
+.article{background:#fff;margin:14px; padding:18px; border-radius:22px; box-shadow:0 10px 30px rgba(15,23,42,.06)}
+.article h3{color:#0ea5e9; margin:0 0 10px}
+
+/* Footer */
+.foot{background:#0ea5e9;color:#fff;text-align:center;padding:16px;margin-top:16px;border-radius:18px 18px 0 0}
+
+/* Responsive */
+@media(max-width:768px){
+  .card img{width:56px;height:56px}
+}

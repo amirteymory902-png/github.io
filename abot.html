@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>درباره ما | امنیت و اعتماد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Tahoma, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #eafffd, #f0fffe);
+      color: #1f2f2f;
+    }
+
+    /* هدر شیشه‌ای */
+    .header {
+      background: linear-gradient(to left, #00c6ff, #00d2b8);
+      color: white;
+      padding: 35px 20px 60px;
+      text-align: center;
+      border-bottom-left-radius: 35px;
+      border-bottom-right-radius: 35px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+      position: relative;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 0.3px;
+    }
+
+    .glass {
+      width: 90%;
+      margin: -45px auto 30px;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 28px;
+      padding: 25px 18px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+      border: 1px solid rgba(0, 200, 200, 0.2);
+      animation: fadeUp 1s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      background: linear-gradient(to left, #00bfa5, #00acc1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section p {
+      font-size: 15px;
+      line-height: 2.1;
+      color: #3a4a4a;
+    }
+
+    .trust-box {
+      background: linear-gradient(135deg, #e0fffd, #e8fffa);
+      border-radius: 22px;
+      padding: 18px;
+      margin: 25px 0;
+      border: 1px solid #b2f5ea;
+      font-size: 15px;
+      line-height: 2;
+      box-shadow: inset 0 0 15px rgba(0,200,200,0.05);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .grid div {
+      background: white;
+      padding: 12px 10px;
+      border-radius: 15px;
+      font-size: 14px;
+      border: 1px solid #d1f5f2;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    /* دکمه تلگرام */
+    .support-btn {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      background: linear-gradient(45deg, #00e676, #00bcd4);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0, 200, 200, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 rgba(0,200,200,0.5); }
+      70% { box-shadow: 0 0 25px rgba(0,200,200,0.7); }
+      100% { box-shadow: 0 0 0 rgba(0,200,200,0.5); }
+    }
+
+    .support-btn img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>درباره ما و امنیت اطلاعات کاربران</h1>
+
+  <svg class="wave" viewBox="0 0 1440 120">
+    <path fill="#ffffff" fill-opacity="1"
+      d="M0,80 C240,140 480,20 720,60 C960,100 1200,40 1440,80 L1440,0 L0,0 Z">
+    </path>
+  </svg>
+</div>
+
+<div class="glass">
+
+  <div class="section">
+    <h2>ما چه کسانی هستیم؟</h2>
+    <p>
+      ما یک تیم تخصصی در زمینه ارائه خدمات دیجیتال هستیم که با هدف ایجاد بستری امن، سریع و حرفه‌ای برای کاربران ایرانی فعالیت می‌کنیم. تمرکز اصلی ما بر شفافیت، صداقت و ارائه خدمات باکیفیت است تا بتوانیم تجربه‌ای لذت‌بخش و مطمئن برای شما ایجاد کنیم.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>امنیت و حفظ حریم خصوصی</h2>
+
+
+<p>
+      امنیت اطلاعات کاربران برای ما از بالاترین اولویت برخوردار است. ما از جدیدترین فناوری‌های رمزنگاری و زیرساخت‌های ایمن استفاده می‌کنیم تا تمامی اطلاعات شخصی، پرداختی و حساب‌های کاربران به‌صورت کامل محافظت شوند.
+    </p>
+    <div class="trust-box">
+      ما هیچ‌گاه اطلاعات کاربران را بدون اجازه ذخیره یا منتشر نمی‌کنیم و تمامی داده‌ها به‌صورت کاملاً محرمانه نگهداری می‌شوند ✔
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>چرا به ما اعتماد کنید؟</h2>
+    <p>
+      اعتماد شما بزرگ‌ترین سرمایه ماست. به همین دلیل همیشه سعی کرده‌ایم شفاف، سریع و حرفه‌ای عمل کنیم. تمام سفارش‌ها با ضمانت کامل تحویل داده می‌شوند و در صورت بروز هرگونه مشکل، پشتیبانی ما در سریع‌ترین زمان ممکن در کنار شما خواهد بود.
+    </p>
+
+    <div class="grid">
+      <div>🔒 حفظ کامل اطلاعات کاربران</div>
+      <div>⚡ تحویل سریع و آنی سفارش‌ها</div>
+      <div>💬 پشتیبانی پاسخگو و واقعی</div>
+      <div>✅ تضمین کیفیت خدمات</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>تعهد ما به شما</h2>
+    <p>
+      ما باور داریم هر کاربر باید احساس امنیت و آرامش در هنگام خرید داشته باشد. به همین دلیل تمام تلاش ما بر این است که فضایی صادقانه، امن و حرفه‌ای برای شما ایجاد کنیم. شما برای ما فقط یک خریدار نیستید، بلکه عضوی از خانواده ما هستید.
+    </p>
+  </div>
+
+</div>
+
+<!-- دکمه پشتیبانی -->
+<a href="https://t.me/YourTelegramID" target="_blank" class="support-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+  پشتیبانی آنلاین
+</a>
+
+</body>
+</html>

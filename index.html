@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayle.css">
+    <link rel="icon" href="parsi.jpg">
+    <title>parsionix</title>
+
+
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@30.1.0/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="header-box">
+
+            <div class="header-right">
+                <div class="icon-btn">🔔</div>
+                <div class="icon-btn">🛒</div>
+                <div class="icon-btn">👤</div>
+            </div>
+
+            <div class="header-center">
+                <input type="text" class="header-search" placeholder="جستجو در سایت ...">
+                <button class="header-search-btn">🔍</button>
+            </div>
+
+            <div class="header-left">
+                پارسی اونیکس
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- منوی همبرگری -->
+    <div class="menu-container">
+        <button id="menu-toggle">☰ منو</button>
+        <ul class="menu-one">
+            <li><a href="#">صفحه اصلی</a></li>
+
+            <li><a href="#">پرفروش ترین</a>
+
+            </li>
+
+            <li><a href="#">دسته بندی</a>
+                <ul class="text">
+                    <li><a href="in-app.html"><svg width="40" height="40" viewBox="0 0 24 24" fill="#1e90ff"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="8" />
+                                <path d="M12 7v10" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                                <path d="M8 12h8" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                            </svg>خرید درون برنامه ای</a>
+                    </li>
+                    <li><a href="#"><svg width="40" height="40" viewBox="0 0 24 24" fill="#1e90ff"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="6" width="20" height="12" rx="2" ry="2" />
+                                <rect x="2" y="10" width="20" height="2" fill="#ffffff" opacity="0.75" />
+                                <path d="M7 15l3-3 3 3 3-3" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>خرید گیفت کارت</a>
+                    </li>
+                    <li><a href="accounts.html" class="meno-item"><svg width="40" height="40" viewBox="0 0 24 24" fill="#1e90ff"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 7l3.5 3 3-5 3 5 3.5-3 2 10H1l2-10z" />
+                            </svg>خرید اکانت</a></li>
+                    <li><a href=""><svg width="40" height="40" viewBox="0 0 24 24" fill="#1e90ff" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 3l7 4v5c0 5-4 8-7 9-3-1-7-4-7-9V7l7-4z"/>
+    <path d="M9 12l2 2 4-4" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>خرید تحریم شکن</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">تماس با ما</a>
+                <ul class="menu-trew">
+                    <li>
+                        <a href="#">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 1a7 7 0 0 1 7 7v4a7 7 0 0 1-14 0V8a7 7 0 0 1 7-7z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 21h14" />
+                            </svg>
+                            پشتیبانی سایت
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <polygon points="22 2 11 13 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            پشتیبانی تلگرام
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="abot.html">درباره ما</a></li>
+        </ul>
+    </div>
+
+    <div class="sidbar_content">
+        <div class="sidbar">
+            <h3>سایدبار نمونه</h3>
+            <p></p>
+        </div>
+        <div class="content">
+            <h2>محتوای اصلی</h2>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 پارسی اونیکس| همه حقوق محفوظ است
+    </div>
+
+    <!-- JS منوی همبرگری -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.menu-one');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
